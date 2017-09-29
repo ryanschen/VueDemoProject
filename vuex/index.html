@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vuex-demo</title>
+	<script src="https://cdn.bootcss.com/vue/2.4.2/vue.js"></script>
+	<script src="https://cdn.bootcss.com/vuex/2.4.0/vuex.js"></script>
+</head>
+<body>
+
+	<div id="app">
+		<ol>
+			<todo-item v-bind:todo="a">
+			</todo-item>
+		</ol>
+	</div>
+
+	<script>
+	/*Vue.component('todo-item', {
+		props: ['todo'],
+		template: '<li>{{todo}}</li>'
+	})*/
+	/*const Counter = {
+		template: `<div>{{ count }}</div>`,
+		computed: {
+			count () {
+				return store.state.count
+			}
+		}
+	}*/
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			/*groceryList: [
+				{id: 0, text: '蔬菜'},
+				{id: 1, text: '奶酪'},
+				{id: 2, text: '苹果'}
+			],*/
+			a: 999
+		}
+	});
+	window.onload = function(){
+		vm.$watch('a', function(newValue, oldValue){
+			console.info(oldValue);
+			console.info(newValue);
+		});
+		setTimeout(function(){
+			console.info('setTimeout')
+			vm.$data.a = "22";
+		}, 3000)
+		
+	}
+	</script>
+</body>
+</html>
