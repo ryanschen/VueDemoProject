@@ -11,7 +11,7 @@ import GetTodo from './components/GetTodo'
 import CurrentTodos from './components/CurrentTodos'
 import CompletedTodos from './components/CompletedTodos'
 export default {
-  components: { 
+  components: {  
     GetTodo,
     CurrentTodos,
     CompletedTodos
