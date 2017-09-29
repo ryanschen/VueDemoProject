@@ -22,7 +22,7 @@ export default {
 <style>
 @import url('https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css');
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif, '微软雅黑';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
